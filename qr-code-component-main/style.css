@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
+
+html,
+body {
+	height: 100%;
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: hsl(0, 8%, 95%);
+}
+
+.container {
+	display: flex;
+	width: 90%;
+	height: 80%;
+	background-color: hsl(212, 45%, 89%);
+	-webkit-box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
+	box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
+	justify-content: center;
+	align-items: center;
+}
+
+.card {
+	display: flex;
+	width: 420px;
+	height: 600px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	-webkit-box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
+	box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
+	flex-direction: column;
+	align-items: center;
+}
+
+.picture {
+	display: flex;
+	width: 400px;
+	height: 400px;
+	margin-top: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.discripton {
+	display: flex;
+	flex-direction: column;
+	width: 400px;
+	height: 170px;
+	margin-top: 5px;
+	align-items: center;
+}
+
+.upper {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 700;
+	color: hsl(218, 44%, 22%);
+	text-align: center;
+	font-size: 25px;
+	line-height: 0%;
+}
+
+.lower {
+	font-family: 'Outfit', sans-serif;
+	font-weight: 400;
+	color: gray;
+	text-align: center;
+	font-size: 15px;
+	line-height: 0%;
+}
