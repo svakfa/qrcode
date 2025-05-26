@@ -1,17 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
-.attribution {
-	font-size: 11px;
-	text-align: center;
-}
-.attribution a {
-	color: hsl(228, 45%, 44%);
+* {
+	box-sizing: border-box;
 }
 
 html,
 body {
 	height: 100%;
 	margin: 0;
+	font-family: 'Outfit', sans-serif;
 }
 
 body {
@@ -19,65 +16,81 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: hsl(0, 8%, 95%);
+	padding: 1rem;
 }
 
 .container {
 	display: flex;
-	width: 90%;
-	height: 80%;
+	width: 100%;
+	max-width: 1200px;
+	height: auto;
 	background-color: hsl(212, 45%, 89%);
-	-webkit-box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
-	-moz-box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
 	box-shadow: 1px 5px 8px 3px rgba(34, 60, 80, 0.2);
 	justify-content: center;
 	align-items: center;
+	padding: 1rem;
 }
 
 .card {
 	display: flex;
-	width: 420px;
-	height: 600px;
-	background-color: hsl(0, 0%, 100%);
-	border-radius: 20px;
-	-webkit-box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
-	-moz-box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
-	box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
 	flex-direction: column;
 	align-items: center;
+	width: 100%;
+	max-width: 420px;
+	background-color: hsl(0, 0%, 100%);
+	border-radius: 20px;
+	box-shadow: 1px 5px 41px -2px rgba(34, 60, 80, 0.2);
+	padding: 1rem;
+	box-sizing: border-box;
 }
 
 .picture {
-	display: flex;
-	width: 400px;
-	height: 400px;
-	margin-top: 10px;
+	width: 100%;
+	aspect-ratio: 1 / 1; /* Квадратное изображение */
 	border-radius: 10px;
 	overflow: hidden;
+}
+
+.picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
 }
 
 .discripton {
 	display: flex;
 	flex-direction: column;
-	width: 400px;
-	height: 170px;
-	margin-top: 5px;
+	width: 100%;
+	margin-top: 1rem;
 	align-items: center;
+	text-align: center;
+	padding: 0 0.5rem;
 }
 
 .upper {
-	font-family: 'Outfit', sans-serif;
 	font-weight: 700;
 	color: hsl(218, 44%, 22%);
+	font-size: 1.5rem;
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
 	text-align: center;
-	font-size: 25px;
-	line-height: 0%;
 }
 
 .lower {
-	font-family: 'Outfit', sans-serif;
 	font-weight: 400;
 	color: gray;
+	font-size: 1rem;
+	line-height: 1.4;
 	text-align: center;
-	font-size: 15px;
-	line-height: 0%;
+}
+
+@media (max-width: 480px) {
+	.upper {
+		font-size: 1.2rem;
+	}
+
+	.lower {
+		font-size: 0.9rem;
+	}
 }
