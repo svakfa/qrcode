@@ -46,7 +46,7 @@ body {
 
 .picture {
 	width: 100%;
-	aspect-ratio: 1 / 1; /* Квадратное изображение */
+	aspect-ratio: 1 / 1;
 	border-radius: 10px;
 	overflow: hidden;
 }
